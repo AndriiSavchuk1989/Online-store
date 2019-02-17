@@ -1,0 +1,18 @@
+.footer {
+  flex: 0 0 auto;
+}
+
+.rules, .copyright {
+  text-align: center;
+}
+
+.footer {
+  color: #729FBF;
+}
+
+a {
+  color: #729FBF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}

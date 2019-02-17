@@ -1,0 +1,62 @@
+.header {
+  position: relative;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: #729FBF;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover {background-color: #111;}
+
+ul.topnav li.right {
+  float: right;
+}
+
+ul.topnav li a {
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}
+
+#search {
+  width: 300px; /* Ширина поля с кнопкой */
+  border: 1px solid #729FBF; /* Параметры рамки */
+  min-height: 20px; /* Минимальная высота */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: auto;
+}
+input[type="search"] {
+  border: none; /* Убираем рамку */
+  outline: none; /* Убираем свечение в Chrome и Safari */
+  -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+  width: 274px; /* Ширина поля */
+  vertical-align: middle; /* Выравнивание по середине */
+  height: 20px;
+}
+input[type="submit"] {
+  width: 20px; /* Ширина кнопки */
+  height: 20px; /* Высота кнопки */
+  border: none; /* Убираем рамку */
+  background: url(~src/static/img/search-512.png) no-repeat center left; /* Параметры фона */
+  background-size: 20px;
+  padding: 5px;
+}
