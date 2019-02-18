@@ -36,7 +36,3 @@ q:before, q:after {
   content: '';
   content: none;
 }
-
-body, html {
-  height: 100%;
-}
