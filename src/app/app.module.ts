@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { ProductsComponent } from './products/products.component';
 import { AppRoutingModule } from './app-routing.module';
+import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     ContentComponent,
     FooterComponent,
-    ProductsComponent
+    ProductsComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,
