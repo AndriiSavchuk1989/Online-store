@@ -28,7 +28,7 @@ export class ProductsComponent implements OnInit {
   addToCart = (product) => {
     this.cartService.addToCart({product, quantity: 1});
   }
-  ngOnDestroy() {
-    this.sub.unsubscribe();
-  }
+  // ngOnDestroy() {
+    // this.sub.unsubscribe();
+  // }
 }
