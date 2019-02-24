@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import {ProductsComponent} from './products/products.component';
-import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
-import {TermsConditionsComponent} from './terms-conditions/terms-conditions.component';
+import {ProductsComponent} from './pages/products/products.component';
+import {PrivacyPolicyComponent} from './pages/privacy-policy/privacy-policy.component';
+import {TermsConditionsComponent} from './pages/terms-conditions/terms-conditions.component';
+import {LoginComponent} from './pages/auth/login/login.component';
 
 const appRoutes: Routes = [
   {path: 'products', component: ProductsComponent},
   {path: 'privacy-policy', component: PrivacyPolicyComponent},
-  {path: 'terms-conditions', component: TermsConditionsComponent}
+  {path: 'terms-conditions', component: TermsConditionsComponent},
+  {path: 'login', component: LoginComponent}
 ];
 
 @NgModule({

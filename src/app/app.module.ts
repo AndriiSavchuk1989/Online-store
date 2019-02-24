@@ -4,12 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ProductsComponent } from './products/products.component';
+import { ProductsComponent } from './pages/products/products.component';
 import { AppRoutingModule } from './app-routing.module';
-import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
-import {TermsConditionsComponent} from './terms-conditions/terms-conditions.component';
-import {CartComponent} from './cart/cart.component';
-
+import {PrivacyPolicyComponent} from './pages/privacy-policy/privacy-policy.component';
+import {TermsConditionsComponent} from './pages/terms-conditions/terms-conditions.component';
+import {AuthRoutingModule} from './pages/auth/auth-routing.module';
+import {AuthModule} from './pages/auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -18,13 +18,14 @@ import {CartComponent} from './cart/cart.component';
     FooterComponent,
     ProductsComponent,
     PrivacyPolicyComponent,
-    TermsConditionsComponent,
-    CartComponent
+    TermsConditionsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthModule,
+    AuthRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
