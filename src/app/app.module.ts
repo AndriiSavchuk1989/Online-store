@@ -13,7 +13,9 @@ import { AuthRoutingModule } from './pages/auth/auth-routing.module';
 import { AuthModule } from './pages/auth/auth.module';
 import { ProductComponent } from './pages/product/product.component';
 import { QuantityControlComponent } from './quantity-control/quantity-control.component';
-import {CartPageComponent} from './pages/cart/cart.component';
+import { CartPageComponent } from './pages/cart/cart.component';
+import { CartService } from './service/cart.service';
+import { ProductService } from './service/product.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,7 @@ import {CartPageComponent} from './pages/cart/cart.component';
     AuthRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [CartService, ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
