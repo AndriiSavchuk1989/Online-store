@@ -13,9 +13,8 @@ export class CartService {
   }
   addToCart = (cart: Cart) => {
     const current = this.cartListSubject.getValue();
-    const dup = current.find( c => c.product.title === cart.product.product.title);
-    if (dup) { dup.quantity += cart.quantity; }
-    else { current.push(cart); }
+    const dup = current.find( c => c.product.name === cart.product.product.name);
+    if (dup) { dup.quantity += cart.quantity; } else { current.push(cart); }
     this.cartListSubject.next(current);
   }
   reloadCart = (cartList) => {
