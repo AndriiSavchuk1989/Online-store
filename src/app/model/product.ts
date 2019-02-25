@@ -1,7 +1,7 @@
 export class Product {
-  title: string;
-  brand?: string;
-  price?: number;
-  description?: string;
   image?: string;
+  name: string;
+  price?: number;
+  brand?: string;
+  description?: string;
 }

@@ -22,8 +22,9 @@ export class ProductsComponent implements OnInit {
     this.load();
   }
   load = () => {
-    this.sub = this.productService.getProducts('../../../assets/db.json');
-    this.products = this.sub;
+    this.sub = this.productService.getProducts();
+    this.products = this.sub.subscribe(res => this.products = res.products);
+    console.log(this.products);
   }
   addToCart = (product) => {
     this.cartService.addToCart({product, quantity: 1});
