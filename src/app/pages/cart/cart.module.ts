@@ -3,6 +3,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { CartPageComponent } from './cart.component';
 import { cartPageRoutes } from './cart.routes';
+
 @NgModule({
   imports: [
     SharedModule,
