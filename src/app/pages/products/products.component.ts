@@ -23,6 +23,7 @@ export class ProductsComponent implements OnInit {
   }
   load = () => {
     this.sub = this.productService.getProducts();
+    console.log(this.sub);
     this.products = this.sub.subscribe(res => this.products = res.products);
     console.log(this.products);
   }
